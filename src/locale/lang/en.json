@@ -712,5 +712,6 @@
   "add-widget-module": "Add Widget Module",
   "thought": "Thought",
   "untitled-chat": "New Chat",
-  "no-chats": "No Chats"
+  "no-chats": "No Chats",
+  "meet-widget-api": "Customize your own widget"
 }
