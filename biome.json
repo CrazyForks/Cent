@@ -13,6 +13,7 @@
 			"!**/node_modules",
 			"!**/src-tauri",
 			"!**/public",
+			"!.*",
 			"!src/locale/lang/**/*.json",
 			"!**/*.config.js"
 		]

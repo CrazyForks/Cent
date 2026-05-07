@@ -22,6 +22,9 @@ dist-ssr
 *.sln
 *.sw?
 
+# ai customize
+.claude
+
 # Rust build artifacts
 src-tauri/target
 
