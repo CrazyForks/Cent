@@ -1,8 +1,10 @@
 import type { Tool } from "@/assistant";
+import { withDebugLog } from "../debug-log";
 import { EnvTool } from "./env-tool";
 import {
     AnalyzeBillsTool,
     GetAccountMetaTool,
+    ImportBillsTool,
     QueryBillsTool,
 } from "./ledger-tools";
 import { PlaygroundSkill, PlaygroundTool } from "./playground";
@@ -14,8 +16,9 @@ export const CentAIConfig = {
         AnalyzeBillsTool,
         QueryBillsTool,
         GetAccountMetaTool,
+        ImportBillsTool,
         PlaygroundTool,
-    ] as Tool[],
+    ].map((t) => withDebugLog(t as Tool)) as Tool[],
     skills: [PlaygroundSkill],
     provider: CentAIProvider,
     systemPrompt: `
