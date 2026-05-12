@@ -23,6 +23,8 @@ type State = {
     voiceRecordingEnabled?: boolean;
     /** 是否使用键盘输入代替语言识别 */
     voiceByKeyboard?: boolean;
+    /** 是否关闭设置页顶部的赞助横幅 */
+    sponsorBannerClosed?: boolean;
     /** relayr中转服务配置 */
     relayr?: {
         enable?: boolean;

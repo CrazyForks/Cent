@@ -2,6 +2,7 @@ import PopupLayout from "@/layouts/popup-layout";
 import { useIntl } from "@/locale";
 
 import createConfirmProvider from "../confirm";
+import { SponsorAboutItem } from "../sponsor";
 import { Button } from "../ui/button";
 import Version from "./version";
 
@@ -61,6 +62,7 @@ function Form({ onCancel }: { onCancel?: () => void }) {
                     </div>
                     <i className="icon-[mdi--arrow-top-right]"></i>
                 </a>
+                <SponsorAboutItem />
                 {/* <div className="w-full min-h-10 pb-2 flex justify-between items-center px-4 opacity-60">
                     <div className="flex items-center gap-2">
                         <i className="icon-[mdi--github] size-5"></i>
