@@ -15,7 +15,7 @@ function Form({ onCancel }: { onCancel?: () => void }) {
             onBack={onCancel}
             className="h-full overflow-hidden"
         >
-            <div className="divide-y divide-solid flex flex-col overflow-hidden py-4 gap-2">
+            <div className="divide-y divide-solid flex flex-col overflow-y-auto py-4 gap-2">
                 <div className="w-full flex flex-col justify-between items-center px-4 gap-2 pb-4">
                     <img
                         src="/icon.png"
@@ -79,7 +79,7 @@ const [AboutSettingsProvider, showAboutSettings] = createConfirmProvider(Form, {
     dialogTitle: "experimental-functions",
     dialogModalClose: true,
     contentClassName:
-        "h-full w-full max-h-full max-w-full rounded-none sm:rounded-md sm:max-h-[55vh] sm:w-[90vw] sm:max-w-[500px]",
+        "h-full w-full max-h-full max-w-full rounded-none sm:rounded-md sm:max-h-[min(520px,calc(100vh-32px))] sm:w-[90vw] sm:max-w-[500px]",
 });
 
 export default function AboutSettingsItem() {
