@@ -29,9 +29,11 @@ dist-ssr
 
 # ai customize
 .claude
+.cursor
 
 # Rust build artifacts
 src-tauri/target
 
 src-tauri/gen
 src-tauri/binaries
+.pnpm-store
